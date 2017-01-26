@@ -12,7 +12,7 @@ you can require the packaged library like so:
 
 ```clojure
 (ns application.core
-  (:require cljsjs.react-autosuggest))
+  (:require emergentbehavior.react-autosuggest))
 ```
 
 A sample reagent project that uses the library is available at [https://github.com/cdorrat/autosuggest-sample](https://github.com/cdorrat/autosuggest-sample)

@@ -46,12 +46,12 @@
               :unzip true)
     (build-autosuggest)
 
-    (sift :move {#"^react-autosuggest.*[/ \\]dist[/ \\]standalone[/ \\]autosuggest.js$" "cljsjs/react-autosuggest/development/react-autosuggest.inc.js"
-                 #"^react-autosuggest.*[/ \\]dist[/ \\]standalone[/ \\]autosuggest.min\.js$" "cljsjs/react-autosuggest/production/react-autosuggest.min.inc.js"})
+    (sift :move {#"^react-autosuggest.*[/ \\]dist[/ \\]standalone[/ \\]autosuggest.js$" "emergentbehavior/react-autosuggest/development/react-autosuggest.inc.js"
+                 #"^react-autosuggest.*[/ \\]dist[/ \\]standalone[/ \\]autosuggest.min\.js$" "emergentbehavior/react-autosuggest/production/react-autosuggest.min.inc.js"})
 
-    (sift :include #{#"^cljsjs"})
+    (sift :include #{#"^emergentbehavior"})
 
-    (deps-cljs :name "cljsjs.react-autosuggest"
+    (deps-cljs :name "emergentbehavior.react-autosuggest"
                :requires ["cljsjs.react"
                           "cljsjs.react.dom"])
     (pom)
