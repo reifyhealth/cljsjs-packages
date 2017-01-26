@@ -12,7 +12,7 @@
          '[adzerk.bootlaces :refer :all])
 
 (def +lib-version+ "8.0.0")
-(def +version+ (str +lib-version+ "-1"))
+(def +version+ (str +lib-version+ "-2"))
 (def +expected-checksum+ "F6925AE51929D8422CCD3F36D6586006")
 (bootlaces! +version+)
 
