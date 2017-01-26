@@ -2,7 +2,7 @@
 
 [](dependency)
 ```clojure
-[gigasquid/react-autosuggest "8.0.0-0"] ;; latest release
+[emergentbehavior/react-autosuggest "8.0.0-0"] ;; latest release
 ```
 [](/dependency)
 

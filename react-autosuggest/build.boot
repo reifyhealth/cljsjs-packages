@@ -17,7 +17,7 @@
 (bootlaces! +version+)
 
 (task-options!
-  pom  {:project     'gigasquid/react-autosuggest
+  pom  {:project     'emergentbehavior/react-autosuggest
         :version     +version+
         :description "WAI-ARIA compliant React autosuggest component "
         :url         "https://github.com/moroshko/react-autosuggest.git"
