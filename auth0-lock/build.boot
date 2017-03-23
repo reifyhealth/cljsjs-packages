@@ -7,7 +7,7 @@
          '[adzerk.bootlaces :refer :all])
 
 (def +lib-version+ "10.13.0")
-(def +version+ (str +lib-version+ "-0"))
+(def +version+ (str +lib-version+ "-1"))
 (bootlaces! +version+)
 
 (task-options!
@@ -24,7 +24,7 @@
       :unzip true)
     (sift :move {#"^lock.*/build/lock\.js$"      "emergentbehavior/auth0-lock/development/lock.inc.js"
                  #"^lock.*/build/lock\.min\.js$" "emergentbehavior/auth0-lock/production/lock.min.inc.js" })
-    (sift :include #{#"^cljsjs"})
+    (sift :include #{#"^emergentbehavior"})
     (deps-cljs :name "emergentbehavior.auth0-lock")
     (pom)
     (jar)))
