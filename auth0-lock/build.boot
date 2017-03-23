@@ -7,7 +7,7 @@
          '[adzerk.bootlaces :refer :all])
 
 (def +lib-version+ "10.13.0")
-(def +version+ (str +lib-version+ "-1"))
+(def +version+ (str +lib-version+ "-2"))
 (bootlaces! +version+)
 
 (task-options!
