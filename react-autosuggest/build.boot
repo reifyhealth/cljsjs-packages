@@ -1,23 +1,20 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[cljsjs/boot-cljsjs "0.5.2"  :scope "test"]
-                  [adzerk/bootlaces "0.1.13" :scope "test"]])
+  :dependencies '[[cljsjs/boot-cljsjs "0.8.2"  :scope "test"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all]
          '[boot.core :as boot]
          '[boot.tmpdir :as tmpd]
          '[clojure.java.io :as io]
          '[boot.util :refer [sh]]
-         '[clojure.string :as str]
-         '[adzerk.bootlaces :refer :all])
+         '[clojure.string :as str])
 
-(def +lib-version+ "8.0.0")
-(def +version+ (str +lib-version+ "-2"))
-(def +expected-checksum+ "F6925AE51929D8422CCD3F36D6586006")
-(bootlaces! +version+)
+(def +lib-version+ "9.3.2")
+(def +version+ (str +lib-version+ "-0"))
+(def +expected-checksum+ "AE435FBF7457FB5D7852BD799C9F5291")
 
 (task-options!
-  pom  {:project     'emergentbehavior/react-autosuggest
+  pom  {:project     'cljsjs/react-autosuggest
         :version     +version+
         :description "WAI-ARIA compliant React autosuggest component "
         :url         "https://github.com/moroshko/react-autosuggest.git"
@@ -35,7 +32,7 @@
         (io/copy (tmpd/file f) target))
       (let [build-dir  (str (io/file tmp (format "react-autosuggest-%s" +lib-version+)))]
         (binding [boot.util/*sh-dir* build-dir]
-          ((sh "npm" "install"))))
+          ((sh "npm" "install" "--unsafe-perm"))))
       (-> fileset (boot/add-resource tmp) boot/commit!))))
 
 
@@ -46,14 +43,13 @@
               :unzip true)
     (build-autosuggest)
 
-    (sift :move {#"^react-autosuggest.*[/ \\]dist[/ \\]standalone[/ \\]autosuggest.js$" "emergentbehavior/react-autosuggest/development/react-autosuggest.inc.js"
-                 #"^react-autosuggest.*[/ \\]dist[/ \\]standalone[/ \\]autosuggest.min\.js$" "emergentbehavior/react-autosuggest/production/react-autosuggest.min.inc.js"})
+    (sift :move {#"^react-autosuggest.*[/ \\]dist[/ \\]standalone[/ \\]autosuggest.js$" "cljsjs/react-autosuggest/development/react-autosuggest.inc.js"
+                 #"^react-autosuggest.*[/ \\]dist[/ \\]standalone[/ \\]autosuggest.min\.js$" "cljsjs/react-autosuggest/production/react-autosuggest.min.inc.js"})
 
-    (sift :include #{#"^emergentbehavior"})
+    (sift :include #{#"^cljsjs"})
 
-    (deps-cljs :name "emergentbehavior.react-autosuggest"
+    (deps-cljs :name "cljsjs.react-autosuggest"
                :requires ["cljsjs.react"
                           "cljsjs.react.dom"])
     (pom)
     (jar)))
-

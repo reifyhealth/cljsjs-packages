@@ -1,12 +1,12 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[cljsjs/boot-cljsjs "0.5.2"  :scope "test"]
+  :dependencies '[[cljsjs/boot-cljsjs "0.8.2"  :scope "test"]
                   [cljsjs/jquery "2.2.2-0"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
 (def +lib-version+ "3.5.6")
-(def +version+ (str +lib-version+ "-1"))
+(def +version+ (str +lib-version+ "-2"))
 
 (task-options!
   pom {:project 'cljsjs/pickadate

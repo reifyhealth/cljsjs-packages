@@ -1,10 +1,10 @@
 (set-env!
   :resource-paths #{"resources"}
-  :dependencies '[[cljsjs/boot-cljsjs "0.5.2" :scope "test"]])
+  :dependencies '[[cljsjs/boot-cljsjs "0.8.2" :scope "test"]])
 
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +lib-version+ "2.5.0")
+(def +lib-version+ "2.6.2")
 (def +version+ (str +lib-version+ "-0"))
 
 (task-options!
@@ -18,7 +18,7 @@
 (deftask package []
   (comp
    (download :url (str "https://github.com/krisk/Fuse/archive/v" +lib-version+ ".zip")
-             :checksum "E24A46DD222B363082A2655641818CA5"
+             :checksum "91bcd90a9150242d4912c8db1b4fd4c0"
              :unzip true)
    (sift :move {#"^Fuse-(.*)/src/fuse.js" "cljsjs/fuse/development/fuse.inc.js"
                 #"^Fuse-(.*)/src/fuse.min.js" "cljsjs/fuse/production/fuse.min.inc.js"})
