@@ -1,5 +1,5 @@
 (def +lib-version+ "0.30.6")
-(def +version+ (str +lib-version+ "-0"))
+(def +version+ (str +lib-version+ "-1"))
 
 (set-env!
  :resource-paths #{"resources"}
@@ -31,7 +31,7 @@
                 "reifyhealth/slate/development/slate.inc.js"
                 #"^slate.min.js"
                 "reifyhealth/slate/production/slate.min.inc.js"})
-   (sift :include #{#"^cljsjs"})
+   (sift :include #{#"^reifyhealth"})
    (deps-cljs :name "reifyhealth.slate"
               :requires ["cljsjs.react" "cljsjs.immutable"])
    (pom)
