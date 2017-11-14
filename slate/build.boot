@@ -9,7 +9,7 @@
 (require '[cljsjs.boot-cljsjs.packaging :refer :all])
 
 (task-options!
- pom  {:project     'cljsjs/slate
+ pom  {:project     'reifyhealth/slate
        :version     +version+
        :description "A completely customizable framework for building rich text editors."
        :url         "http://slatejs.org"
@@ -24,11 +24,11 @@
    (download :url (str "https://unpkg.com/slate@" +lib-version+  "/dist/slate.min.js")
              :checksum "772AC3884200145B4B0976B3C057DF33")
    (sift :move {#"^slate.js$"
-                "cljsjs/slate/development/slate.inc.js"
+                "reifyhealth/slate/development/slate.inc.js"
                 #"^slate.min.js"
-                "cljsjs/slate/production/slate.min.inc.js"})
+                "reifyhealth/slate/production/slate.min.inc.js"})
    (sift :include #{#"^cljsjs"})
-   (deps-cljs :name "cljsjs.slate"
+   (deps-cljs :name "reifyhealth.slate"
               :requires ["cljsjs.react" "cljsjs.immutable"])
    (pom)
    (jar)))
