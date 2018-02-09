@@ -1,4 +1,4 @@
-{"cljsjs/slate/development/jsrsasign.inc.js"
+{"cljsjs/jsrsasign/development/jsrsasign.inc.js"
  "7D6C273EE0E2B0DA4E8AECFC931F8F98",
- "cljsjs/slate/production/jsrsasign.min.inc.js"
+ "cljsjs/jsrsasign/production/jsrsasign.min.inc.js"
  "D0F561A680D3BE8649A4BB60C9C43CB1"}
