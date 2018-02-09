@@ -1,0 +1,20 @@
+# cljsjs/jsrsasign
+
+[](dependency)
+```clojure
+[cljsjs/jsrsasign "8.0.6-0"] ;; latest release
+```
+[](/dependency)
+
+This jar comes with `deps.cljs` as used by the [Foreign Libs][flibs] feature
+of the ClojureScript compiler. After adding the above dependency to your project
+you can require the packaged library like so:
+
+```clojure
+(ns application.core
+  (:require cljsjs.jsrsasign))
+```
+
+Documentation for the jsrsasign lib can be found [on its GitHub page](https://github.com/kjur/jsrsasign)
+
+[flibs]: https://clojurescript.org/reference/packaging-foreign-deps
