@@ -19,8 +19,8 @@
   (comp
    (download :url (str "https://unpkg.com/jsrsasign@" +lib-version+ "/lib/jsrsasign.js"))
    (download :url (str "https://unpkg.com/jsrsasign@" +lib-version+ "/lib/jsrsasign-all-min.js"))
-   (sift :move {#"^jsrsasign.js$"        "cljsjs/slate/development/jsrsasign.inc.js"
-                #"^jsrsasign-all-min.js" "cljsjs/slate/production/jsrsasign.min.inc.js"})
+   (sift :move {#"^jsrsasign.js$"        "cljsjs/jsrsasign/development/jsrsasign.inc.js"
+                #"^jsrsasign-all-min.js" "cljsjs/jsrsasign/production/jsrsasign.min.inc.js"})
    (sift :include #{#"^cljsjs"})
    (deps-cljs :name "cljsjs.jsrsasign")
    (pom)
