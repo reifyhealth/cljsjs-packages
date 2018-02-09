@@ -24,4 +24,5 @@
    (sift :include #{#"^cljsjs"})
    (deps-cljs :name "cljsjs.jsrsasign")
    (pom)
-   (jar)))
+   (jar)
+   (validate-checksums)))
