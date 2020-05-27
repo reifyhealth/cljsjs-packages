@@ -6,59 +6,100 @@
  * https://unpkg.com/react@16.12.0/umd/react.development.js
  * https://unpkg.com/react-dom@16.12.0/umd/react-dom.development.js
  * https://unpkg.com/moment@2.24.0/moment.js
- * https://unpkg.com/antd@3.26.12/dist/antd-with-locales.js
+ * https://unpkg.com/antd@4.2.5/dist/antd-with-locales.js
  *
  * and extern the `antd` JavaScript object
  *
  **********************************************************************/
 var antd = {
   "Affix": {
-    "defaultProps": {
-      "target": function () {}
+    "contextType": {
+      "$$typeof": {},
+      "Consumer": {
+        "$$typeof": {},
+        "_calculateChangedBits": {},
+        "_context": {}
+      },
+      "Provider": {
+        "$$typeof": {},
+        "_context": {}
+      },
+      "_calculateChangedBits": {},
+      "_currentRenderer": {},
+      "_currentRenderer2": {},
+      "_currentValue": {
+        "getPrefixCls": function () { },
+        "renderEmpty": function () { }
+      },
+      "_currentValue2": {
+        "getPrefixCls": function () { },
+        "renderEmpty": function () { }
+      },
+      "_threadCount": {}
     }
   },
-  "Alert": function () {},
+  "Alert": {
+    "ErrorBoundary": function () { }
+  },
   "Anchor": {
     "Link": {
-      "contextTypes": {
-        "antAnchor": {
-          "isRequired": function () {}
-        }
+      "contextType": {
+        "$$typeof": {},
+        "Consumer": {
+          "$$typeof": {},
+          "_calculateChangedBits": {},
+          "_context": {}
+        },
+        "Provider": {
+          "$$typeof": {},
+          "_context": {}
+        },
+        "_calculateChangedBits": {},
+        "_currentRenderer": {},
+        "_currentRenderer2": {},
+        "_currentValue": {},
+        "_currentValue2": {},
+        "_threadCount": {}
       },
       "defaultProps": {
         "href": {}
       }
     },
-    "childContextTypes": {
-      "antAnchor": {
-        "isRequired": function () {}
-      }
+    "contextType": {
+      "$$typeof": {},
+      "Consumer": {
+        "$$typeof": {},
+        "_calculateChangedBits": {},
+        "_context": {}
+      },
+      "Provider": {
+        "$$typeof": {},
+        "_context": {}
+      },
+      "_calculateChangedBits": {},
+      "_currentRenderer": {},
+      "_currentRenderer2": {},
+      "_currentValue": {
+        "getPrefixCls": function () { },
+        "renderEmpty": function () { }
+      },
+      "_currentValue2": {
+        "getPrefixCls": function () { },
+        "renderEmpty": function () { }
+      },
+      "_threadCount": {}
     },
     "defaultProps": {
       "affix": {},
-      "getContainer": function () {},
       "showInkInFixed": {}
     }
   },
   "AutoComplete": {
-    "OptGroup": {
-      "isSelectOptGroup": {}
-    },
+    "$$typeof": {},
     "Option": {
-      "isSelectOption": {},
-      "propTypes": {
-        "value": {
-          "isRequired": function () {}
-        }
-      }
+      "isSelectOption": {}
     },
-    "defaultProps": {
-      "choiceTransitionName": {},
-      "filterOption": {},
-      "optionLabelProp": {},
-      "showSearch": {},
-      "transitionName": {}
-    }
+    "render": function () { }
   },
   "Avatar": {
     "defaultProps": {
@@ -67,8 +108,12 @@ var antd = {
     }
   },
   "BackTop": {
-    "defaultProps": {
-      "visibilityHeight": {}
+    "$$typeof": {},
+    "compare": {},
+    "type": {
+      "defaultProps": {
+        "visibilityHeight": {}
+      }
     }
   },
   "Badge": {
@@ -77,20 +122,6 @@ var antd = {
       "dot": {},
       "overflowCount": {},
       "showZero": {}
-    },
-    "propTypes": {
-      "count": {
-        "isRequired": function () {}
-      },
-      "dot": {
-        "isRequired": function () {}
-      },
-      "overflowCount": {
-        "isRequired": function () {}
-      },
-      "showZero": {
-        "isRequired": function () {}
-      }
     }
   },
   "Breadcrumb": {
@@ -98,17 +129,6 @@ var antd = {
       "__ANT_BREADCRUMB_ITEM": {},
       "defaultProps": {
         "separator": {}
-      },
-      "propTypes": {
-        "href": {
-          "isRequired": function () {}
-        },
-        "prefixCls": {
-          "isRequired": function () {}
-        },
-        "separator": {
-          "isRequired": function () {}
-        }
       }
     },
     "Separator": {
@@ -116,21 +136,11 @@ var antd = {
     },
     "defaultProps": {
       "separator": {}
-    },
-    "propTypes": {
-      "prefixCls": {
-        "isRequired": function () {}
-      },
-      "routes": {
-        "isRequired": function () {}
-      },
-      "separator": {
-        "isRequired": function () {}
-      }
     }
   },
   "Button": {
-    "Group": function () {},
+    "$$typeof": {},
+    "Group": function () { },
     "__ANT_BUTTON": {},
     "defaultProps": {
       "block": {},
@@ -138,95 +148,13 @@ var antd = {
       "htmlType": {},
       "loading": {}
     },
-    "propTypes": {
-      "block": {
-        "isRequired": function () {}
-      },
-      "className": {
-        "isRequired": function () {}
-      },
-      "htmlType": {
-        "isRequired": function () {}
-      },
-      "icon": {
-        "isRequired": function () {}
-      },
-      "loading": {
-        "isRequired": function () {}
-      },
-      "onClick": {
-        "isRequired": function () {}
-      },
-      "shape": {
-        "isRequired": function () {}
-      },
-      "size": {
-        "isRequired": function () {}
-      },
-      "title": {
-        "isRequired": function () {}
-      },
-      "type": {
-        "isRequired": function () {}
-      }
-    }
+    "displayName": {},
+    "render": function () { }
   },
-  "Calendar": {
-    "defaultProps": {
-      "fullscreen": {},
-      "locale": {},
-      "onChange": function () {},
-      "onPanelChange": function () {},
-      "onSelect": function () {}
-    },
-    "propTypes": {
-      "className": {
-        "isRequired": function () {}
-      },
-      "dateCellRender": {
-        "isRequired": function () {}
-      },
-      "dateFullCellRender": {
-        "isRequired": function () {}
-      },
-      "fullscreen": {
-        "isRequired": function () {}
-      },
-      "headerRender": {
-        "isRequired": function () {}
-      },
-      "locale": {
-        "isRequired": function () {}
-      },
-      "monthCellRender": {
-        "isRequired": function () {}
-      },
-      "monthFullCellRender": {
-        "isRequired": function () {}
-      },
-      "onChange": {
-        "isRequired": function () {}
-      },
-      "onPanelChange": {
-        "isRequired": function () {}
-      },
-      "onSelect": {
-        "isRequired": function () {}
-      },
-      "prefixCls": {
-        "isRequired": function () {}
-      },
-      "style": {
-        "isRequired": function () {}
-      },
-      "value": {
-        "isRequired": function () {}
-      }
-    }
-  },
+  "Calendar": function () { },
   "Card": {
-    "Grid": function () {},
-    "Meta": function () {}
+    "Grid": function () { },
+    "Meta": function () { }
   },
   "Carousel": {
     "defaultProps": {
@@ -238,171 +166,228 @@ var antd = {
   "Cascader": {
     "defaultProps": {
       "allowClear": {},
+      "bordered": {},
       "disabled": {},
       "options": {},
-      "popupPlacement": {},
       "transitionName": {}
     }
   },
   "Checkbox": {
     "Group": {
-      "childContextTypes": {
-        "checkboxGroup": {
-          "isRequired": function () {}
-        }
-      },
       "defaultProps": {
         "options": {}
-      },
-      "propTypes": {
-        "defaultValue": {
-          "isRequired": function () {}
-        },
-        "onChange": {
-          "isRequired": function () {}
-        },
-        "options": function () {},
-        "value": {
-          "isRequired": function () {}
-        }
       }
     },
     "__ANT_CHECKBOX": {},
-    "contextTypes": {
-      "checkboxGroup": {
-        "isRequired": function () {}
-      }
+    "contextType": {
+      "$$typeof": {},
+      "Consumer": {
+        "$$typeof": {},
+        "_calculateChangedBits": {},
+        "_context": {}
+      },
+      "Provider": {
+        "$$typeof": {},
+        "_context": {}
+      },
+      "_calculateChangedBits": {},
+      "_currentRenderer": {},
+      "_currentRenderer2": {},
+      "_currentValue": {},
+      "_currentValue2": {},
+      "_threadCount": {}
     },
     "defaultProps": {
       "indeterminate": {}
     }
   },
-  "Col": {
-    "propTypes": {
-      "children": {
-        "isRequired": function () {}
-      },
-      "className": {
-        "isRequired": function () {}
-      },
-      "lg": {
-        "isRequired": function () {}
-      },
-      "md": {
-        "isRequired": function () {}
-      },
-      "offset": {
-        "isRequired": function () {}
-      },
-      "order": {
-        "isRequired": function () {}
-      },
-      "pull": {
-        "isRequired": function () {}
-      },
-      "push": {
-        "isRequired": function () {}
-      },
-      "sm": {
-        "isRequired": function () {}
-      },
-      "span": {
-        "isRequired": function () {}
-      },
-      "xl": {
-        "isRequired": function () {}
-      },
-      "xs": {
-        "isRequired": function () {}
-      },
-      "xxl": {
-        "isRequired": function () {}
-      }
-    }
-  },
+  "Col": function () { },
   "Collapse": {
-    "Panel": function () {},
+    "Panel": function () { },
     "defaultProps": {
-      "bordered": {},
-      "expandIconPosition": {},
-      "openAnimation": {
-        "appear": function () {},
-        "enter": function () {},
-        "leave": function () {}
-      }
+      "bordered": {}
     }
   },
-  "Comment": function () {},
-  "ConfigProvider": function () {},
+  "Comment": function () { },
+  "ConfigProvider": function () { },
   "DatePicker": {
     "MonthPicker": {
-      "defaultProps": {
-        "locale": {},
-        "onChange": function () {},
-        "onOk": function () {},
-        "onOpenChange": function () {},
-        "popupStyle": {},
-        "transitionName": {}
-      }
+      "contextType": {
+        "$$typeof": {},
+        "Consumer": {
+          "$$typeof": {},
+          "_calculateChangedBits": {},
+          "_context": {}
+        },
+        "Provider": {
+          "$$typeof": {},
+          "_context": {}
+        },
+        "_calculateChangedBits": {},
+        "_currentRenderer": {},
+        "_currentRenderer2": {},
+        "_currentValue": {
+          "getPrefixCls": function () { },
+          "renderEmpty": function () { }
+        },
+        "_currentValue2": {
+          "getPrefixCls": function () { },
+          "renderEmpty": function () { }
+        },
+        "_threadCount": {}
+      },
+      "displayName": {}
     },
     "RangePicker": {
-      "defaultProps": {
-        "locale": {},
-        "onChange": function () {},
-        "onOk": function () {},
-        "onOpenChange": function () {},
-        "popupStyle": {},
-        "transitionName": {}
+      "contextType": {
+        "$$typeof": {},
+        "Consumer": {
+          "$$typeof": {},
+          "_calculateChangedBits": {},
+          "_context": {}
+        },
+        "Provider": {
+          "$$typeof": {},
+          "_context": {}
+        },
+        "_calculateChangedBits": {},
+        "_currentRenderer": {},
+        "_currentRenderer2": {},
+        "_currentValue": {
+          "getPrefixCls": function () { },
+          "renderEmpty": function () { }
+        },
+        "_currentValue2": {
+          "getPrefixCls": function () { },
+          "renderEmpty": function () { }
+        },
+        "_threadCount": {}
       }
+    },
+    "TimePicker": {
+      "contextType": {
+        "$$typeof": {},
+        "Consumer": {
+          "$$typeof": {},
+          "_calculateChangedBits": {},
+          "_context": {}
+        },
+        "Provider": {
+          "$$typeof": {},
+          "_context": {}
+        },
+        "_calculateChangedBits": {},
+        "_currentRenderer": {},
+        "_currentRenderer2": {},
+        "_currentValue": {
+          "getPrefixCls": function () { },
+          "renderEmpty": function () { }
+        },
+        "_currentValue2": {
+          "getPrefixCls": function () { },
+          "renderEmpty": function () { }
+        },
+        "_threadCount": {}
+      },
+      "displayName": {}
     },
     "WeekPicker": {
-      "defaultProps": {
-        "locale": {},
-        "onChange": function () {},
-        "onOk": function () {},
-        "onOpenChange": function () {},
-        "popupStyle": {},
-        "transitionName": {}
-      }
+      "contextType": {
+        "$$typeof": {},
+        "Consumer": {
+          "$$typeof": {},
+          "_calculateChangedBits": {},
+          "_context": {}
+        },
+        "Provider": {
+          "$$typeof": {},
+          "_context": {}
+        },
+        "_calculateChangedBits": {},
+        "_currentRenderer": {},
+        "_currentRenderer2": {},
+        "_currentValue": {
+          "getPrefixCls": function () { },
+          "renderEmpty": function () { }
+        },
+        "_currentValue2": {
+          "getPrefixCls": function () { },
+          "renderEmpty": function () { }
+        },
+        "_threadCount": {}
+      },
+      "displayName": {}
     },
-    "defaultProps": {
-      "locale": {},
-      "onChange": function () {},
-      "onOk": function () {},
-      "onOpenChange": function () {},
-      "popupStyle": {},
-      "transitionName": {}
+    "YearPicker": {
+      "contextType": {
+        "$$typeof": {},
+        "Consumer": {
+          "$$typeof": {},
+          "_calculateChangedBits": {},
+          "_context": {}
+        },
+        "Provider": {
+          "$$typeof": {},
+          "_context": {}
+        },
+        "_calculateChangedBits": {},
+        "_currentRenderer": {},
+        "_currentRenderer2": {},
+        "_currentValue": {
+          "getPrefixCls": function () { },
+          "renderEmpty": function () { }
+        },
+        "_currentValue2": {
+          "getPrefixCls": function () { },
+          "renderEmpty": function () { }
+        },
+        "_threadCount": {}
+      },
+      "displayName": {}
+    },
+    "contextType": {
+      "$$typeof": {},
+      "Consumer": {
+        "$$typeof": {},
+        "_calculateChangedBits": {},
+        "_context": {}
+      },
+      "Provider": {
+        "$$typeof": {},
+        "_context": {}
+      },
+      "_calculateChangedBits": {},
+      "_currentRenderer": {},
+      "_currentRenderer2": {},
+      "_currentValue": {
+        "getPrefixCls": function () { },
+        "renderEmpty": function () { }
+      },
+      "_currentValue2": {
+        "getPrefixCls": function () { },
+        "renderEmpty": function () { }
+      },
+      "_threadCount": {}
     }
   },
   "Descriptions": {
-    "Item": function () {},
-    "defaultProps": {
-      "column": {
-        "lg": {},
-        "md": {},
-        "sm": {},
-        "xl": {},
-        "xs": {},
-        "xxl": {}
-      },
-      "size": {}
-    }
+    "Item": function () { }
   },
-  "Divider": function () {},
+  "Divider": function () { },
   "Drawer": {
     "displayName": {}
   },
   "Dropdown": {
     "Button": {
+      "__ANT_BUTTON": {},
       "defaultProps": {
-        "placement": {},
+        "buttonsRender": function () { },
         "type": {}
       }
     },
     "defaultProps": {
       "mouseEnterDelay": {},
-      "mouseLeaveDelay": {},
-      "placement": {}
+      "mouseLeaveDelay": {}
     }
   },
   "Empty": {
@@ -413,7 +398,7 @@ var antd = {
       "key": {},
       "props": {},
       "ref": {},
-      "type": function () {}
+      "type": function () { }
     },
     "PRESENTED_IMAGE_SIMPLE": {
       "$$typeof": {},
@@ -422,91 +407,26 @@ var antd = {
       "key": {},
       "props": {},
       "ref": {},
-      "type": function () {}
+      "type": function () { }
     }
   },
   "Form": {
-    "Item": {
-      "defaultProps": {
-        "hasFeedback": {}
-      },
-      "propTypes": {
-        "children": {
-          "isRequired": function () {}
-        },
-        "className": {
-          "isRequired": function () {}
-        },
-        "colon": {
-          "isRequired": function () {}
-        },
-        "hasFeedback": {
-          "isRequired": function () {}
-        },
-        "help": {
-          "isRequired": function () {}
-        },
-        "id": {
-          "isRequired": function () {}
-        },
-        "label": {
-          "isRequired": function () {}
-        },
-        "labelCol": {
-          "isRequired": function () {}
-        },
-        "prefixCls": {
-          "isRequired": function () {}
-        },
-        "validateStatus": {
-          "isRequired": function () {}
-        },
-        "wrapperCol": {
-          "isRequired": function () {}
-        }
-      }
-    },
-    "create": function () {},
-    "createFormField": function () {},
-    "defaultProps": {
-      "colon": {},
-      "hideRequiredMark": {},
-      "layout": {},
-      "onSubmit": function () {}
-    },
-    "propTypes": {
-      "children": {
-        "isRequired": function () {}
-      },
-      "colon": {
-        "isRequired": function () {}
-      },
-      "hideRequiredMark": {
-        "isRequired": function () {}
-      },
-      "layout": {
-        "isRequired": function () {}
-      },
-      "onSubmit": {
-        "isRequired": function () {}
-      },
-      "prefixCls": {
-        "isRequired": function () {}
-      }
-    }
+    "$$typeof": {},
+    "Item": function () { },
+    "List": function () { },
+    "Provider": function () { },
+    "create": function () { },
+    "render": function () { },
+    "useForm": function () { }
   },
-  "Icon": {
-    "createFromIconfontCN": function () {},
-    "getTwoToneColor": function () {},
-    "setTwoToneColor": function () {}
+  "Grid": {
+    "useBreakpoint": function () { }
   },
   "Input": {
-    "Group": function () {},
+    "Group": function () { },
     "Password": {
       "defaultProps": {
         "action": {},
-        "inputPrefixCls": {},
-        "prefixCls": {},
         "visibilityToggle": {}
       }
     },
@@ -515,74 +435,17 @@ var antd = {
         "enterButton": {}
       }
     },
-    "TextArea": function () {},
+    "TextArea": function () { },
     "defaultProps": {
       "type": {}
-    },
-    "propTypes": {
-      "addonAfter": {
-        "isRequired": function () {}
-      },
-      "addonBefore": {
-        "isRequired": function () {}
-      },
-      "allowClear": {
-        "isRequired": function () {}
-      },
-      "className": {
-        "isRequired": function () {}
-      },
-      "defaultValue": {
-        "isRequired": function () {}
-      },
-      "disabled": {
-        "isRequired": function () {}
-      },
-      "id": {
-        "isRequired": function () {}
-      },
-      "maxLength": {
-        "isRequired": function () {}
-      },
-      "onBlur": {
-        "isRequired": function () {}
-      },
-      "onFocus": {
-        "isRequired": function () {}
-      },
-      "onKeyDown": {
-        "isRequired": function () {}
-      },
-      "onKeyUp": {
-        "isRequired": function () {}
-      },
-      "onPressEnter": {
-        "isRequired": function () {}
-      },
-      "prefix": {
-        "isRequired": function () {}
-      },
-      "prefixCls": {
-        "isRequired": function () {}
-      },
-      "size": {
-        "isRequired": function () {}
-      },
-      "suffix": {
-        "isRequired": function () {}
-      },
-      "type": {
-        "isRequired": function () {}
-      },
-      "value": {
-        "isRequired": function () {}
-      }
     }
   },
   "InputNumber": {
+    "$$typeof": {},
     "defaultProps": {
       "step": {}
-    }
+    },
+    "render": function () { }
   },
   "Layout": {
     "Content": {
@@ -594,67 +457,17 @@ var antd = {
     "Header": {
       "displayName": {}
     },
-    "Sider": function () {},
+    "Sider": function () { },
     "displayName": {}
   },
   "List": {
     "Item": {
-      "Meta": function () {},
-      "contextTypes": {
-        "grid": {
-          "isRequired": function () {}
-        },
-        "itemLayout": {
-          "isRequired": function () {}
-        }
-      }
-    },
-    "childContextTypes": {
-      "grid": {
-        "isRequired": function () {}
-      },
-      "itemLayout": {
-        "isRequired": function () {}
-      }
-    },
-    "defaultProps": {
-      "bordered": {},
-      "dataSource": {},
-      "loading": {},
-      "pagination": {},
-      "split": {}
+      "Meta": function () { }
     }
-  },
-  "LocaleProvider": {
-    "childContextTypes": {
-      "antLocale": {
-        "isRequired": function () {}
-      }
-    },
-    "defaultProps": {
-      "locale": {}
-    },
-    "propTypes": {
-      "locale": {
-        "isRequired": function () {}
-      }
-    }
-  },
-  "Mention": {
-    "Nav": function () {},
-    "defaultProps": {
-      "loading": {},
-      "multiLines": {},
-      "notFoundContent": {},
-      "placement": {}
-    },
-    "getMentions": function () {},
-    "toContentState": function () {},
-    "toString": function () {}
   },
   "Mentions": {
-    "Option": function () {},
-    "getMentions": function () {}
+    "Option": function () { },
+    "getMentions": function () { }
   },
   "Menu": {
     "Divider": {
@@ -676,14 +489,14 @@ var antd = {
     "SubMenu": {
       "contextTypes": {
         "antdMenuTheme": {
-          "isRequired": function () {}
+          "isRequired": function () { }
         }
       },
       "isSubMenu": {}
     }
   },
   "Modal": {
-    "confirm": function () {},
+    "confirm": function () { },
     "defaultProps": {
       "confirmLoading": {},
       "maskTransitionName": {},
@@ -692,75 +505,18 @@ var antd = {
       "visible": {},
       "width": {}
     },
-    "destroyAll": function () {},
-    "error": function () {},
-    "info": function () {},
-    "propTypes": {
-      "cancelText": {
-        "isRequired": function () {}
-      },
-      "centered": {
-        "isRequired": function () {}
-      },
-      "closable": {
-        "isRequired": function () {}
-      },
-      "closeIcon": {
-        "isRequired": function () {}
-      },
-      "confirmLoading": {
-        "isRequired": function () {}
-      },
-      "footer": {
-        "isRequired": function () {}
-      },
-      "okText": {
-        "isRequired": function () {}
-      },
-      "onCancel": {
-        "isRequired": function () {}
-      },
-      "onOk": {
-        "isRequired": function () {}
-      },
-      "prefixCls": {
-        "isRequired": function () {}
-      },
-      "title": {
-        "isRequired": function () {}
-      },
-      "visible": {
-        "isRequired": function () {}
-      },
-      "width": {
-        "isRequired": function () {}
-      }
-    },
-    "success": function () {},
-    "warn": function () {},
-    "warning": function () {}
+    "destroyAll": function () { },
+    "error": function () { },
+    "info": function () { },
+    "success": function () { },
+    "useModal": function () { },
+    "warn": function () { },
+    "warning": function () { }
   },
-  "PageHeader": {
-    "defaultProps": {
-      "backIcon": {
-        "$$typeof": {},
-        "_owner": {},
-        "_store": {},
-        "key": {},
-        "props": {
-          "type": {}
-        },
-        "ref": {},
-        "type": {
-          "createFromIconfontCN": function () {},
-          "getTwoToneColor": function () {},
-          "setTwoToneColor": function () {}
-        }
-      }
-    }
-  },
-  "Pagination": function () {},
+  "PageHeader": function () { },
+  "Pagination": function () { },
   "Popconfirm": {
+    "$$typeof": {},
     "defaultProps": {
       "disabled": {},
       "icon": {
@@ -768,24 +524,24 @@ var antd = {
         "_owner": {},
         "_store": {},
         "key": {},
-        "props": {
-          "theme": {},
-          "type": {}
-        },
+        "props": {},
         "ref": {},
         "type": {
-          "createFromIconfontCN": function () {},
-          "getTwoToneColor": function () {},
-          "setTwoToneColor": function () {}
+          "$$typeof": {},
+          "render": {
+            "displayName": {}
+          }
         }
       },
       "okType": {},
       "placement": {},
       "transitionName": {},
       "trigger": {}
-    }
+    },
+    "render": function () { }
   },
   "Popover": {
+    "$$typeof": {},
     "defaultProps": {
       "mouseEnterDelay": {},
       "mouseLeaveDelay": {},
@@ -793,7 +549,9 @@ var antd = {
       "placement": {},
       "transitionName": {},
       "trigger": {}
-    }
+    },
+    "displayName": {},
+    "render": function () { }
   },
   "Progress": {
     "defaultProps": {
@@ -804,102 +562,65 @@ var antd = {
       "strokeLinecap": {},
       "trailColor": {},
       "type": {}
-    },
-    "propTypes": {
-      "format": {
-        "isRequired": function () {}
-      },
-      "gapDegree": {
-        "isRequired": function () {}
-      },
-      "percent": {
-        "isRequired": function () {}
-      },
-      "showInfo": {
-        "isRequired": function () {}
-      },
-      "status": {
-        "isRequired": function () {}
-      },
-      "strokeColor": {
-        "isRequired": function () {}
-      },
-      "strokeLinecap": {
-        "isRequired": function () {}
-      },
-      "strokeWidth": {
-        "isRequired": function () {}
-      },
-      "trailColor": {
-        "isRequired": function () {}
-      },
-      "type": {
-        "isRequired": function () {}
-      },
-      "width": {
-        "isRequired": function () {}
-      }
     }
   },
   "Radio": {
     "Button": {
-      "contextTypes": {
-        "radioGroup": {
-          "isRequired": function () {}
-        }
-      }
+      "$$typeof": {},
+      "render": function () { }
     },
     "Group": {
-      "childContextTypes": {
-        "radioGroup": {
-          "isRequired": function () {}
-        }
-      },
       "defaultProps": {
         "buttonStyle": {}
       }
     },
-    "contextTypes": {
-      "radioGroup": {
-        "isRequired": function () {}
-      }
+    "contextType": {
+      "$$typeof": {},
+      "Consumer": {
+        "$$typeof": {},
+        "_calculateChangedBits": {},
+        "_context": {}
+      },
+      "Provider": {
+        "$$typeof": {},
+        "_context": {}
+      },
+      "_calculateChangedBits": {},
+      "_currentRenderer": {},
+      "_currentRenderer2": {},
+      "_currentValue": {},
+      "_currentValue2": {},
+      "_threadCount": {}
     },
     "defaultProps": {
       "type": {}
     }
   },
   "Rate": {
+    "$$typeof": {},
     "defaultProps": {
       "character": {
         "$$typeof": {},
         "_owner": {},
         "_store": {},
         "key": {},
-        "props": {
-          "theme": {},
-          "type": {}
-        },
+        "props": {},
         "ref": {},
         "type": {
-          "createFromIconfontCN": function () {},
-          "getTwoToneColor": function () {},
-          "setTwoToneColor": function () {}
+          "$$typeof": {},
+          "render": {
+            "displayName": {}
+          }
         }
       }
     },
-    "propTypes": {
-      "character": {
-        "isRequired": function () {}
-      },
-      "prefixCls": {
-        "isRequired": function () {}
-      }
-    }
+    "displayName": {},
+    "render": function () { }
   },
   "Result": {
-    "PRESENTED_IMAGE_403": function () {},
-    "PRESENTED_IMAGE_404": function () {},
-    "PRESENTED_IMAGE_500": function () {},
+    "PRESENTED_IMAGE_403": function () { },
+    "PRESENTED_IMAGE_404": function () { },
+    "PRESENTED_IMAGE_500": function () { },
     "defaultProps": {
       "status": {}
     }
@@ -907,29 +628,6 @@ var antd = {
   "Row": {
     "defaultProps": {
       "gutter": {}
-    },
-    "propTypes": {
-      "align": {
-        "isRequired": function () {}
-      },
-      "children": {
-        "isRequired": function () {}
-      },
-      "className": {
-        "isRequired": function () {}
-      },
-      "gutter": {
-        "isRequired": function () {}
-      },
-      "justify": {
-        "isRequired": function () {}
-      },
-      "prefixCls": {
-        "isRequired": function () {}
-      },
-      "type": {
-        "isRequired": function () {}
-      }
     }
   },
   "Select": {
@@ -937,50 +635,32 @@ var antd = {
       "isSelectOptGroup": {}
     },
     "Option": {
-      "isSelectOption": {},
-      "propTypes": {
-        "value": {
-          "isRequired": function () {}
-        }
-      }
+      "isSelectOption": {}
     },
     "SECRET_COMBOBOX_MODE_DO_NOT_USE": {},
     "defaultProps": {
+      "bordered": {},
       "choiceTransitionName": {},
-      "showSearch": {},
       "transitionName": {}
-    },
-    "propTypes": {
-      "choiceTransitionName": {
-        "isRequired": function () {}
-      },
-      "className": {
-        "isRequired": function () {}
-      },
-      "id": {
-        "isRequired": function () {}
-      },
-      "notFoundContent": {
-        "isRequired": function () {}
-      },
-      "optionLabelProp": {
-        "isRequired": function () {}
-      },
-      "prefixCls": {
-        "isRequired": function () {}
-      },
-      "showSearch": {
-        "isRequired": function () {}
-      },
-      "size": {
-        "isRequired": function () {}
-      },
-      "transitionName": {
-        "isRequired": function () {}
-      }
     }
   },
   "Skeleton": {
+    "Avatar": {
+      "defaultProps": {
+        "shape": {},
+        "size": {}
+      }
+    },
+    "Button": {
+      "defaultProps": {
+        "size": {}
+      }
+    },
+    "Input": {
+      "defaultProps": {
+        "size": {}
+      }
+    },
     "defaultProps": {
       "avatar": {},
       "paragraph": {},
@@ -988,35 +668,19 @@ var antd = {
     }
   },
   "Slider": {
+    "$$typeof": {},
     "defaultProps": {
-      "tipFormatter": function () {}
-    }
+      "tipFormatter": function () { }
+    },
+    "displayName": {},
+    "render": function () { }
   },
+  "Space": function () { },
   "Spin": {
     "defaultProps": {
       "size": {},
       "spinning": {},
       "wrapperClassName": {}
-    },
-    "propTypes": {
-      "className": {
-        "isRequired": function () {}
-      },
-      "indicator": {
-        "isRequired": function () {}
-      },
-      "prefixCls": {
-        "isRequired": function () {}
-      },
-      "size": {
-        "isRequired": function () {}
-      },
-      "spinning": {
-        "isRequired": function () {}
-      },
-      "wrapperClassName": {
-        "isRequired": function () {}
-      }
     }
   },
   "Statistic": {
@@ -1028,142 +692,33 @@ var antd = {
     "displayName": {}
   },
   "Steps": {
-    "Step": {
-      "propTypes": {
-        "active": {
-          "isRequired": function () {}
-        },
-        "adjustMarginRight": {
-          "isRequired": function () {}
-        },
-        "className": {
-          "isRequired": function () {}
-        },
-        "description": {
-          "isRequired": function () {}
-        },
-        "disabled": {
-          "isRequired": function () {}
-        },
-        "icon": {
-          "isRequired": function () {}
-        },
-        "iconPrefix": {
-          "isRequired": function () {}
-        },
-        "icons": {
-          "isRequired": function () {}
-        },
-        "itemWidth": {
-          "isRequired": function () {}
-        },
-        "onClick": {
-          "isRequired": function () {}
-        },
-        "onStepClick": {
-          "isRequired": function () {}
-        },
-        "prefixCls": {
-          "isRequired": function () {}
-        },
-        "progressDot": {
-          "isRequired": function () {}
-        },
-        "status": {
-          "isRequired": function () {}
-        },
-        "stepIndex": {
-          "isRequired": function () {}
-        },
-        "stepNumber": {
-          "isRequired": function () {}
-        },
-        "style": {
-          "isRequired": function () {}
-        },
-        "subTitle": {
-          "isRequired": function () {}
-        },
-        "tailContent": {
-          "isRequired": function () {}
-        },
-        "title": {
-          "isRequired": function () {}
-        },
-        "wrapperStyle": {
-          "isRequired": function () {}
-        }
-      }
-    },
+    "Step": function () { },
     "defaultProps": {
       "current": {}
-    },
-    "propTypes": {
-      "current": {
-        "isRequired": function () {}
-      },
-      "iconPrefix": {
-        "isRequired": function () {}
-      },
-      "prefixCls": {
-        "isRequired": function () {}
-      }
     }
   },
   "Switch": {
+    "$$typeof": {},
     "__ANT_SWITCH": {},
-    "propTypes": {
-      "className": {
-        "isRequired": function () {}
-      },
-      "prefixCls": {
-        "isRequired": function () {}
-      },
-      "size": {
-        "isRequired": function () {}
-      }
-    }
+    "render": function () { }
   },
   "Table": {
-    "Column": function () {},
-    "ColumnGroup": {
-      "__ANT_TABLE_COLUMN_GROUP": {}
+    "Column": function () { },
+    "ColumnGroup": function () { },
+    "SELECTION_ALL": {},
+    "SELECTION_INVERT": {},
+    "Summary": {
+      "Cell": function () { },
+      "Row": function () { }
     },
-    "displayName": {}
+    "defaultProps": {
+      "rowKey": {}
+    }
   },
   "Tabs": {
     "TabPane": {
       "defaultProps": {
         "placeholder": {}
-      },
-      "propTypes": {
-        "active": {
-          "isRequired": function () {}
-        },
-        "children": {
-          "isRequired": function () {}
-        },
-        "className": {
-          "isRequired": function () {}
-        },
-        "destroyInactiveTabPane": {
-          "isRequired": function () {}
-        },
-        "forceRender": {
-          "isRequired": function () {}
-        },
-        "id": {
-          "isRequired": function () {}
-        },
-        "placeholder": {
-          "isRequired": function () {}
-        },
-        "rootPrefixCls": {
-          "isRequired": function () {}
-        },
-        "style": {
-          "isRequired": function () {}
-        }
       }
     },
     "defaultProps": {
@@ -1172,24 +727,22 @@ var antd = {
     }
   },
   "Tag": {
-    "CheckableTag": function () {},
+    "$$typeof": {},
+    "CheckableTag": function () { },
     "defaultProps": {
       "closable": {}
-    }
+    },
+    "displayName": {},
+    "render": function () { }
   },
   "TimePicker": {
-    "defaultProps": {
-      "align": {
-        "offset": {}
-      },
-      "disabledHours": {},
-      "disabledMinutes": {},
-      "disabledSeconds": {},
-      "focusOnOpen": {},
-      "hideDisabledOptions": {},
-      "placement": {},
-      "transitionName": {}
-    }
+    "$$typeof": {},
+    "RangePicker": {
+      "$$typeof": {},
+      "render": function () { }
+    },
+    "displayName": {},
+    "render": function () { }
   },
   "Timeline": {
     "Item": {
@@ -1205,6 +758,7 @@ var antd = {
     }
   },
   "Tooltip": {
+    "$$typeof": {},
     "defaultProps": {
       "arrowPointAtCenter": {},
       "autoAdjustOverflow": {},
@@ -1212,18 +766,19 @@ var antd = {
       "mouseLeaveDelay": {},
       "placement": {},
       "transitionName": {}
-    }
+    },
+    "displayName": {},
+    "render": function () { }
   },
   "Transfer": {
     "List": {
       "defaultProps": {
         "dataSource": {},
-        "lazy": {},
         "showSearch": {},
         "titleText": {}
       }
     },
-    "Operation": function () {},
+    "Operation": function () { },
     "Search": {
       "defaultProps": {
         "placeholder": {}
@@ -1231,80 +786,13 @@ var antd = {
     },
     "defaultProps": {
       "dataSource": {},
-      "listStyle": function () {},
+      "listStyle": function () { },
       "locale": {},
       "showSearch": {}
-    },
-    "propTypes": {
-      "body": {
-        "isRequired": function () {}
-      },
-      "className": {
-        "isRequired": function () {}
-      },
-      "dataSource": {
-        "isRequired": function () {}
-      },
-      "disabled": {
-        "isRequired": function () {}
-      },
-      "filterOption": {
-        "isRequired": function () {}
-      },
-      "footer": {
-        "isRequired": function () {}
-      },
-      "height": {
-        "isRequired": function () {}
-      },
-      "lazy": {
-        "isRequired": function () {}
-      },
-      "listStyle": {
-        "isRequired": function () {}
-      },
-      "locale": {
-        "isRequired": function () {}
-      },
-      "notFoundContent": {
-        "isRequired": function () {}
-      },
-      "onChange": {
-        "isRequired": function () {}
-      },
-      "operationStyle": {
-        "isRequired": function () {}
-      },
-      "operations": {
-        "isRequired": function () {}
-      },
-      "prefixCls": {
-        "isRequired": function () {}
-      },
-      "render": {
-        "isRequired": function () {}
-      },
-      "rowKey": {
-        "isRequired": function () {}
-      },
-      "searchPlaceholder": {
-        "isRequired": function () {}
-      },
-      "showSearch": {
-        "isRequired": function () {}
-      },
-      "style": {
-        "isRequired": function () {}
-      },
-      "targetKeys": {
-        "isRequired": function () {}
-      },
-      "titles": {
-        "isRequired": function () {}
-      }
     }
   },
   "Tree": {
+    "$$typeof": {},
     "DirectoryTree": {
       "defaultProps": {
         "expandAction": {},
@@ -1315,6 +803,7 @@ var antd = {
       "defaultProps": {
         "title": {}
       },
+      "displayName": {},
       "isTreeNode": {}
     },
     "defaultProps": {
@@ -1322,46 +811,44 @@ var antd = {
       "checkable": {},
       "motion": {
         "motionAppear": {},
+        "motionDeadline": {},
         "motionName": {},
-        "onAppearActive": function () {},
-        "onAppearStart": function () {},
-        "onEnterActive": function () {},
-        "onEnterStart": function () {},
-        "onLeaveActive": function () {},
-        "onLeaveStart": function () {}
+        "onAppearActive": function () { },
+        "onAppearStart": function () { },
+        "onEnterActive": function () { },
+        "onEnterStart": function () { },
+        "onLeaveActive": function () { },
+        "onLeaveStart": function () { }
       },
       "showIcon": {}
-    }
+    },
+    "render": function () { }
   },
   "TreeSelect": {
     "SHOW_ALL": {},
     "SHOW_CHILD": {},
     "SHOW_PARENT": {},
-    "TreeNode": {
-      "isTreeNode": {},
-      "propTypes": {
-        "value": function () {}
-      }
-    },
+    "TreeNode": function () { },
     "defaultProps": {
+      "bordered": {},
       "choiceTransitionName": {},
       "transitionName": {}
     }
   },
   "Typography": {
     "$$typeof": {},
-    "Paragraph": function () {},
-    "Text": function () {},
-    "Title": function () {},
+    "Paragraph": function () { },
+    "Text": function () { },
+    "Title": function () { },
     "displayName": {},
-    "render": function () {}
+    "render": function () { }
   },
   "Upload": {
-    "Dragger": function () {},
+    "Dragger": function () { },
     "defaultProps": {
       "accept": {},
       "action": {},
-      "beforeUpload": function () {},
+      "beforeUpload": function () { },
       "className": {},
       "data": {},
       "disabled": {},
@@ -1385,6 +872,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -1423,6 +911,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -1498,6 +987,129 @@ var antd = {
       },
       "locale": {}
     },
+    "az_AZ": {
+      "Calendar": {
+        "lang": {
+          "backToToday": {},
+          "clear": {},
+          "dateFormat": {},
+          "dateSelect": {},
+          "dateTimeFormat": {},
+          "dayFormat": {},
+          "decadeSelect": {},
+          "locale": {},
+          "month": {},
+          "monthBeforeYear": {},
+          "monthSelect": {},
+          "nextCentury": {},
+          "nextDecade": {},
+          "nextMonth": {},
+          "nextYear": {},
+          "now": {},
+          "ok": {},
+          "placeholder": {},
+          "previousCentury": {},
+          "previousDecade": {},
+          "previousMonth": {},
+          "previousYear": {},
+          "rangePlaceholder": {},
+          "timeSelect": {},
+          "today": {},
+          "weekSelect": {},
+          "year": {},
+          "yearFormat": {},
+          "yearSelect": {}
+        },
+        "timePickerLocale": {
+          "placeholder": {}
+        }
+      },
+      "DatePicker": {
+        "lang": {
+          "backToToday": {},
+          "clear": {},
+          "dateFormat": {},
+          "dateSelect": {},
+          "dateTimeFormat": {},
+          "dayFormat": {},
+          "decadeSelect": {},
+          "locale": {},
+          "month": {},
+          "monthBeforeYear": {},
+          "monthSelect": {},
+          "nextCentury": {},
+          "nextDecade": {},
+          "nextMonth": {},
+          "nextYear": {},
+          "now": {},
+          "ok": {},
+          "placeholder": {},
+          "previousCentury": {},
+          "previousDecade": {},
+          "previousMonth": {},
+          "previousYear": {},
+          "rangePlaceholder": {},
+          "timeSelect": {},
+          "today": {},
+          "weekSelect": {},
+          "year": {},
+          "yearFormat": {},
+          "yearSelect": {}
+        },
+        "timePickerLocale": {
+          "placeholder": {}
+        }
+      },
+      "Modal": {
+        "cancelText": {},
+        "justOkText": {},
+        "okText": {}
+      },
+      "Pagination": {
+        "items_per_page": {},
+        "jump_to": {},
+        "jump_to_confirm": {},
+        "next_3": {},
+        "next_5": {},
+        "next_page": {},
+        "page": {},
+        "prev_3": {},
+        "prev_5": {},
+        "prev_page": {}
+      },
+      "Popconfirm": {
+        "cancelText": {},
+        "okText": {}
+      },
+      "Select": {
+        "notFoundContent": {}
+      },
+      "Table": {
+        "emptyText": {},
+        "filterConfirm": {},
+        "filterReset": {},
+        "filterTitle": {},
+        "selectAll": {},
+        "selectInvert": {}
+      },
+      "TimePicker": {
+        "placeholder": {}
+      },
+      "Transfer": {
+        "itemUnit": {},
+        "itemsUnit": {},
+        "notFoundContent": {},
+        "searchPlaceholder": {},
+        "titles": {}
+      },
+      "Upload": {
+        "previewFile": {},
+        "removeFile": {},
+        "uploadError": {},
+        "uploading": {}
+      },
+      "locale": {}
+    },
     "bg_BG": {
       "Calendar": {
         "lang": {
@@ -1508,6 +1120,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -1542,6 +1155,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -1625,6 +1239,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -1659,6 +1274,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -1740,6 +1356,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -1774,6 +1391,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -1855,6 +1473,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -1889,6 +1508,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -1972,6 +1592,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -2006,6 +1627,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -2039,6 +1661,9 @@ var antd = {
         "justOkText": {},
         "okText": {}
       },
+      "PageHeader": {
+        "back": {}
+      },
       "Pagination": {
         "items_per_page": {},
         "jump_to": {},
@@ -2056,11 +1681,21 @@ var antd = {
         "okText": {}
       },
       "Table": {
+        "collapse": {},
+        "expand": {},
         "filterConfirm": {},
         "filterReset": {},
         "filterTitle": {},
         "selectAll": {},
-        "selectInvert": {}
+        "selectInvert": {},
+        "selectionAll": {},
+        "sortTitle": {}
+      },
+      "Text": {
+        "copied": {},
+        "copy": {},
+        "edit": {},
+        "expand": {}
       },
       "TimePicker": {
         "placeholder": {}
@@ -2077,6 +1712,9 @@ var antd = {
         "uploadError": {},
         "uploading": {}
       },
+      "global": {
+        "placeholder": {}
+      },
       "locale": {}
     },
     "el_GR": {
@@ -2089,6 +1727,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -2123,6 +1762,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -2206,6 +1846,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -2240,6 +1881,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -2323,8 +1965,10 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
+          "monthPlaceholder": {},
           "monthSelect": {},
           "nextCentury": {},
           "nextDecade": {},
@@ -2337,16 +1981,23 @@ var antd = {
           "previousDecade": {},
           "previousMonth": {},
           "previousYear": {},
+          "quarterPlaceholder": {},
+          "rangeMonthPlaceholder": {},
           "rangePlaceholder": {},
+          "rangeWeekPlaceholder": {},
+          "rangeYearPlaceholder": {},
           "timeSelect": {},
           "today": {},
+          "weekPlaceholder": {},
           "weekSelect": {},
           "year": {},
           "yearFormat": {},
+          "yearPlaceholder": {},
           "yearSelect": {}
         },
         "timePickerLocale": {
-          "placeholder": {}
+          "placeholder": {},
+          "rangePlaceholder": {}
         }
       },
       "DatePicker": {
@@ -2358,8 +2009,10 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
+          "monthPlaceholder": {},
           "monthSelect": {},
           "nextCentury": {},
           "nextDecade": {},
@@ -2372,20 +2025,76 @@ var antd = {
           "previousDecade": {},
           "previousMonth": {},
           "previousYear": {},
+          "quarterPlaceholder": {},
+          "rangeMonthPlaceholder": {},
           "rangePlaceholder": {},
+          "rangeWeekPlaceholder": {},
+          "rangeYearPlaceholder": {},
           "timeSelect": {},
           "today": {},
+          "weekPlaceholder": {},
           "weekSelect": {},
           "year": {},
           "yearFormat": {},
+          "yearPlaceholder": {},
           "yearSelect": {}
         },
         "timePickerLocale": {
-          "placeholder": {}
+          "placeholder": {},
+          "rangePlaceholder": {}
         }
       },
       "Empty": {
         "description": {}
+      },
+      "Form": {
+        "defaultValidateMessages": {
+          "array": {
+            "len": {},
+            "max": {},
+            "min": {},
+            "range": {}
+          },
+          "date": {
+            "format": {},
+            "invalid": {},
+            "parse": {}
+          },
+          "default": {},
+          "enum": {},
+          "number": {
+            "len": {},
+            "max": {},
+            "min": {},
+            "range": {}
+          },
+          "pattern": {
+            "mismatch": {}
+          },
+          "required": {},
+          "string": {
+            "len": {},
+            "max": {},
+            "min": {},
+            "range": {}
+          },
+          "types": {
+            "array": {},
+            "boolean": {},
+            "date": {},
+            "email": {},
+            "float": {},
+            "hex": {},
+            "integer": {},
+            "method": {},
+            "number": {},
+            "object": {},
+            "regexp": {},
+            "string": {},
+            "url": {}
+          },
+          "whitespace": {}
+        }
       },
       "Icon": {
         "icon": {}
@@ -2415,6 +2124,7 @@ var antd = {
         "okText": {}
       },
       "Table": {
+        "cancelSort": {},
         "collapse": {},
         "expand": {},
         "filterConfirm": {},
@@ -2422,7 +2132,10 @@ var antd = {
         "filterTitle": {},
         "selectAll": {},
         "selectInvert": {},
-        "sortTitle": {}
+        "selectionAll": {},
+        "sortTitle": {},
+        "triggerAsc": {},
+        "triggerDesc": {}
       },
       "Text": {
         "copied": {},
@@ -2431,7 +2144,8 @@ var antd = {
         "expand": {}
       },
       "TimePicker": {
-        "placeholder": {}
+        "placeholder": {},
+        "rangePlaceholder": {}
       },
       "Transfer": {
         "itemUnit": {},
@@ -2461,6 +2175,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -2495,6 +2210,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -2594,6 +2310,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -2628,6 +2345,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -2711,6 +2429,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -2745,6 +2464,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -2773,10 +2493,65 @@ var antd = {
       "Empty": {
         "description": {}
       },
+      "Form": {
+        "defaultValidateMessages": {
+          "array": {
+            "len": {},
+            "max": {},
+            "min": {},
+            "range": {}
+          },
+          "date": {
+            "format": {},
+            "invalid": {},
+            "parse": {}
+          },
+          "default": {},
+          "enum": {},
+          "number": {
+            "len": {},
+            "max": {},
+            "min": {},
+            "range": {}
+          },
+          "pattern": {
+            "mismatch": {}
+          },
+          "required": {},
+          "string": {
+            "len": {},
+            "max": {},
+            "min": {},
+            "range": {}
+          },
+          "types": {
+            "array": {},
+            "boolean": {},
+            "date": {},
+            "email": {},
+            "float": {},
+            "hex": {},
+            "integer": {},
+            "method": {},
+            "number": {},
+            "object": {},
+            "regexp": {},
+            "string": {},
+            "url": {}
+          },
+          "whitespace": {}
+        }
+      },
+      "Icon": {
+        "icon": {}
+      },
       "Modal": {
         "cancelText": {},
         "justOkText": {},
         "okText": {}
+      },
+      "PageHeader": {
+        "back": {}
       },
       "Pagination": {
         "items_per_page": {},
@@ -2795,11 +2570,24 @@ var antd = {
         "okText": {}
       },
       "Table": {
+        "cancelSort": {},
+        "collapse": {},
+        "expand": {},
         "filterConfirm": {},
         "filterReset": {},
         "filterTitle": {},
         "selectAll": {},
-        "selectInvert": {}
+        "selectInvert": {},
+        "selectionAll": {},
+        "sortTitle": {},
+        "triggerAsc": {},
+        "triggerDesc": {}
+      },
+      "Text": {
+        "copied": {},
+        "copy": {},
+        "edit": {},
+        "expand": {}
       },
       "TimePicker": {
         "placeholder": {}
@@ -2807,7 +2595,8 @@ var antd = {
       "Transfer": {
         "itemUnit": {},
         "itemsUnit": {},
-        "searchPlaceholder": {}
+        "searchPlaceholder": {},
+        "titles": {}
       },
       "Upload": {
         "downloadFile": {},
@@ -2828,6 +2617,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -2862,6 +2652,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -2946,6 +2737,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -2980,6 +2772,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -3067,8 +2860,10 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
+          "monthPlaceholder": {},
           "monthSelect": {},
           "nextCentury": {},
           "nextDecade": {},
@@ -3081,15 +2876,22 @@ var antd = {
           "previousDecade": {},
           "previousMonth": {},
           "previousYear": {},
+          "quarterPlaceholder": {},
+          "rangeMonthPlaceholder": {},
           "rangePlaceholder": {},
+          "rangeWeekPlaceholder": {},
+          "rangeYearPlaceholder": {},
           "timeSelect": {},
           "today": {},
+          "weekPlaceholder": {},
           "year": {},
           "yearFormat": {},
+          "yearPlaceholder": {},
           "yearSelect": {}
         },
         "timePickerLocale": {
-          "placeholder": {}
+          "placeholder": {},
+          "rangePlaceholder": {}
         }
       },
       "DatePicker": {
@@ -3101,8 +2903,10 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
+          "monthPlaceholder": {},
           "monthSelect": {},
           "nextCentury": {},
           "nextDecade": {},
@@ -3115,15 +2919,22 @@ var antd = {
           "previousDecade": {},
           "previousMonth": {},
           "previousYear": {},
+          "quarterPlaceholder": {},
+          "rangeMonthPlaceholder": {},
           "rangePlaceholder": {},
+          "rangeWeekPlaceholder": {},
+          "rangeYearPlaceholder": {},
           "timeSelect": {},
           "today": {},
+          "weekPlaceholder": {},
           "year": {},
           "yearFormat": {},
+          "yearPlaceholder": {},
           "yearSelect": {}
         },
         "timePickerLocale": {
-          "placeholder": {}
+          "placeholder": {},
+          "rangePlaceholder": {}
         }
       },
       "Empty": {
@@ -3162,7 +2973,8 @@ var antd = {
         "expand": {}
       },
       "TimePicker": {
-        "placeholder": {}
+        "placeholder": {},
+        "rangePlaceholder": {}
       },
       "Transfer": {
         "itemUnit": {},
@@ -3188,6 +3000,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -3223,6 +3036,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -3252,10 +3066,16 @@ var antd = {
       "Empty": {
         "description": {}
       },
+      "Icon": {
+        "icon": {}
+      },
       "Modal": {
         "cancelText": {},
         "justOkText": {},
         "okText": {}
+      },
+      "PageHeader": {
+        "back": {}
       },
       "Pagination": {
         "items_per_page": {},
@@ -3274,11 +3094,24 @@ var antd = {
         "okText": {}
       },
       "Table": {
+        "cancelSort": {},
+        "collapse": {},
+        "expand": {},
         "filterConfirm": {},
         "filterReset": {},
         "filterTitle": {},
         "selectAll": {},
-        "selectInvert": {}
+        "selectInvert": {},
+        "selectionAll": {},
+        "sortTitle": {},
+        "triggerAsc": {},
+        "triggerDesc": {}
+      },
+      "Text": {
+        "copied": {},
+        "copy": {},
+        "edit": {},
+        "expand": {}
       },
       "TimePicker": {
         "placeholder": {}
@@ -3295,6 +3128,9 @@ var antd = {
         "uploadError": {},
         "uploading": {}
       },
+      "global": {
+        "placeholder": {}
+      },
       "locale": {}
     },
     "hi_IN": {
@@ -3307,6 +3143,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -3342,6 +3179,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -3433,6 +3271,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -3468,6 +3307,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -3566,6 +3406,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -3600,6 +3441,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -3684,6 +3526,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -3719,6 +3562,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -3822,6 +3666,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -3857,6 +3702,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -3943,6 +3789,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -3977,6 +3824,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -4060,6 +3908,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -4094,6 +3943,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -4190,6 +4040,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthSelect": {},
           "nextCentury": {},
@@ -4206,6 +4057,7 @@ var antd = {
           "rangePlaceholder": {},
           "timeSelect": {},
           "today": {},
+          "weekSelect": {},
           "year": {},
           "yearFormat": {},
           "yearSelect": {}
@@ -4223,6 +4075,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthSelect": {},
           "nextCentury": {},
@@ -4239,6 +4092,7 @@ var antd = {
           "rangePlaceholder": {},
           "timeSelect": {},
           "today": {},
+          "weekSelect": {},
           "year": {},
           "yearFormat": {},
           "yearSelect": {}
@@ -4305,6 +4159,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -4340,6 +4195,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -4431,6 +4287,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -4465,6 +4322,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -4548,6 +4406,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -4582,6 +4441,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -4665,6 +4525,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -4699,6 +4560,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -4782,6 +4644,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -4816,6 +4679,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -4914,6 +4778,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -4949,6 +4814,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -5033,6 +4899,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthSelect": {},
           "nextCentury": {},
@@ -5067,6 +4934,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthSelect": {},
           "nextCentury": {},
@@ -5170,6 +5038,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -5204,6 +5073,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -5286,8 +5156,10 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
+          "monthPlaceholder": {},
           "monthSelect": {},
           "nextCentury": {},
           "nextDecade": {},
@@ -5300,16 +5172,23 @@ var antd = {
           "previousDecade": {},
           "previousMonth": {},
           "previousYear": {},
+          "quarterPlaceholder": {},
+          "rangeMonthPlaceholder": {},
           "rangePlaceholder": {},
+          "rangeWeekPlaceholder": {},
+          "rangeYearPlaceholder": {},
           "timeSelect": {},
           "today": {},
+          "weekPlaceholder": {},
           "weekSelect": {},
           "year": {},
           "yearFormat": {},
+          "yearPlaceholder": {},
           "yearSelect": {}
         },
         "timePickerLocale": {
-          "placeholder": {}
+          "placeholder": {},
+          "rangePlaceholder": {}
         }
       },
       "DatePicker": {
@@ -5321,8 +5200,10 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
+          "monthPlaceholder": {},
           "monthSelect": {},
           "nextCentury": {},
           "nextDecade": {},
@@ -5335,16 +5216,23 @@ var antd = {
           "previousDecade": {},
           "previousMonth": {},
           "previousYear": {},
+          "quarterPlaceholder": {},
+          "rangeMonthPlaceholder": {},
           "rangePlaceholder": {},
+          "rangeWeekPlaceholder": {},
+          "rangeYearPlaceholder": {},
           "timeSelect": {},
           "today": {},
+          "weekPlaceholder": {},
           "weekSelect": {},
           "year": {},
           "yearFormat": {},
+          "yearPlaceholder": {},
           "yearSelect": {}
         },
         "timePickerLocale": {
-          "placeholder": {}
+          "placeholder": {},
+          "rangePlaceholder": {}
         }
       },
       "Empty": {
@@ -5379,7 +5267,8 @@ var antd = {
         "selectInvert": {}
       },
       "TimePicker": {
-        "placeholder": {}
+        "placeholder": {},
+        "rangePlaceholder": {}
       },
       "Transfer": {
         "itemUnit": {},
@@ -5406,6 +5295,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -5440,6 +5330,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -5523,6 +5414,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -5557,6 +5449,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -5659,6 +5552,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -5693,6 +5587,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -5776,6 +5671,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -5810,6 +5706,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -5899,6 +5796,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthFormat": {},
@@ -5934,6 +5832,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthFormat": {},
@@ -6019,6 +5918,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -6054,6 +5954,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -6157,6 +6058,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -6191,6 +6093,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -6219,6 +6122,57 @@ var antd = {
       "Empty": {
         "description": {}
       },
+      "Form": {
+        "defaultValidateMessages": {
+          "array": {
+            "len": {},
+            "max": {},
+            "min": {},
+            "range": {}
+          },
+          "date": {
+            "format": {},
+            "invalid": {},
+            "parse": {}
+          },
+          "default": {},
+          "enum": {},
+          "number": {
+            "len": {},
+            "max": {},
+            "min": {}
+          },
+          "pattern": {
+            "mismatch": {}
+          },
+          "required": {},
+          "string": {
+            "len": {},
+            "max": {},
+            "min": {},
+            "range": {}
+          },
+          "types": {
+            "array": {},
+            "boolean": {},
+            "date": {},
+            "email": {},
+            "float": {},
+            "hex": {},
+            "integer": {},
+            "method": {},
+            "number": {},
+            "object": {},
+            "regexp": {},
+            "string": {},
+            "url": {}
+          },
+          "whitespace": {}
+        }
+      },
+      "Icon": {
+        "icon": {}
+      },
       "Modal": {
         "cancelText": {},
         "justOkText": {},
@@ -6244,12 +6198,19 @@ var antd = {
         "okText": {}
       },
       "Table": {
+        "cancelSort": {},
+        "collapse": {},
+        "emptyText": {},
+        "expand": {},
         "filterConfirm": {},
         "filterReset": {},
         "filterTitle": {},
         "selectAll": {},
         "selectInvert": {},
-        "sortTitle": {}
+        "selectionAll": {},
+        "sortTitle": {},
+        "triggerAsc": {},
+        "triggerDesc": {}
       },
       "Text": {
         "copied": {},
@@ -6272,6 +6233,9 @@ var antd = {
         "uploadError": {},
         "uploading": {}
       },
+      "global": {
+        "placeholder": {}
+      },
       "locale": {}
     },
     "sk_SK": {
@@ -6284,6 +6248,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -6301,7 +6266,6 @@ var antd = {
           "rangePlaceholder": {},
           "timeSelect": {},
           "today": {},
-          "weekSelect": {},
           "year": {},
           "yearFormat": {},
           "yearSelect": {}
@@ -6319,6 +6283,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -6336,7 +6301,6 @@ var antd = {
           "rangePlaceholder": {},
           "timeSelect": {},
           "today": {},
-          "weekSelect": {},
           "year": {},
           "yearFormat": {},
           "yearSelect": {}
@@ -6422,6 +6386,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthFormat": {},
@@ -6457,6 +6422,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthFormat": {},
@@ -6541,6 +6507,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -6575,6 +6542,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -6657,6 +6625,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -6691,6 +6660,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -6778,6 +6748,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -6813,6 +6784,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -6916,6 +6888,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -6950,6 +6923,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -7052,6 +7026,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -7086,6 +7061,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -7183,6 +7159,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -7217,6 +7194,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -7300,6 +7278,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -7335,6 +7314,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthBeforeYear": {},
           "monthSelect": {},
@@ -7419,7 +7399,9 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
+          "monthPlaceholder": {},
           "monthSelect": {},
           "nextCentury": {},
           "nextDecade": {},
@@ -7432,16 +7414,23 @@ var antd = {
           "previousDecade": {},
           "previousMonth": {},
           "previousYear": {},
+          "quarterPlaceholder": {},
+          "rangeMonthPlaceholder": {},
           "rangePlaceholder": {},
+          "rangeWeekPlaceholder": {},
+          "rangeYearPlaceholder": {},
           "timeSelect": {},
           "today": {},
+          "weekPlaceholder": {},
           "weekSelect": {},
           "year": {},
           "yearFormat": {},
+          "yearPlaceholder": {},
           "yearSelect": {}
         },
         "timePickerLocale": {
-          "placeholder": {}
+          "placeholder": {},
+          "rangePlaceholder": {}
         }
       },
       "DatePicker": {
@@ -7453,7 +7442,9 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
+          "monthPlaceholder": {},
           "monthSelect": {},
           "nextCentury": {},
           "nextDecade": {},
@@ -7466,20 +7457,76 @@ var antd = {
           "previousDecade": {},
           "previousMonth": {},
           "previousYear": {},
+          "quarterPlaceholder": {},
+          "rangeMonthPlaceholder": {},
           "rangePlaceholder": {},
+          "rangeWeekPlaceholder": {},
+          "rangeYearPlaceholder": {},
           "timeSelect": {},
           "today": {},
+          "weekPlaceholder": {},
           "weekSelect": {},
           "year": {},
           "yearFormat": {},
+          "yearPlaceholder": {},
           "yearSelect": {}
         },
         "timePickerLocale": {
-          "placeholder": {}
+          "placeholder": {},
+          "rangePlaceholder": {}
         }
       },
       "Empty": {
         "description": {}
+      },
+      "Form": {
+        "defaultValidateMessages": {
+          "array": {
+            "len": {},
+            "max": {},
+            "min": {},
+            "range": {}
+          },
+          "date": {
+            "format": {},
+            "invalid": {},
+            "parse": {}
+          },
+          "default": {},
+          "enum": {},
+          "number": {
+            "len": {},
+            "max": {},
+            "min": {},
+            "range": {}
+          },
+          "pattern": {
+            "mismatch": {}
+          },
+          "required": {},
+          "string": {
+            "len": {},
+            "max": {},
+            "min": {},
+            "range": {}
+          },
+          "types": {
+            "array": {},
+            "boolean": {},
+            "date": {},
+            "email": {},
+            "float": {},
+            "hex": {},
+            "integer": {},
+            "method": {},
+            "number": {},
+            "object": {},
+            "regexp": {},
+            "string": {},
+            "url": {}
+          },
+          "whitespace": {}
+        }
       },
       "Icon": {
         "icon": {}
@@ -7509,6 +7556,7 @@ var antd = {
         "okText": {}
       },
       "Table": {
+        "cancelSort": {},
         "collapse": {},
         "expand": {},
         "filterConfirm": {},
@@ -7516,7 +7564,10 @@ var antd = {
         "filterTitle": {},
         "selectAll": {},
         "selectInvert": {},
-        "sortTitle": {}
+        "selectionAll": {},
+        "sortTitle": {},
+        "triggerAsc": {},
+        "triggerDesc": {}
       },
       "Text": {
         "copied": {},
@@ -7525,7 +7576,8 @@ var antd = {
         "expand": {}
       },
       "TimePicker": {
-        "placeholder": {}
+        "placeholder": {},
+        "rangePlaceholder": {}
       },
       "Transfer": {
         "itemUnit": {},
@@ -7554,6 +7606,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthSelect": {},
           "nextCentury": {},
@@ -7570,6 +7623,7 @@ var antd = {
           "rangePlaceholder": {},
           "timeSelect": {},
           "today": {},
+          "weekSelect": {},
           "year": {},
           "yearFormat": {},
           "yearSelect": {}
@@ -7587,6 +7641,7 @@ var antd = {
           "dateTimeFormat": {},
           "dayFormat": {},
           "decadeSelect": {},
+          "locale": {},
           "month": {},
           "monthSelect": {},
           "nextCentury": {},
@@ -7603,6 +7658,7 @@ var antd = {
           "rangePlaceholder": {},
           "timeSelect": {},
           "today": {},
+          "weekSelect": {},
           "year": {},
           "yearFormat": {},
           "yearSelect": {}
@@ -7613,6 +7669,58 @@ var antd = {
       },
       "Empty": {
         "description": {}
+      },
+      "Form": {
+        "defaultValidateMessages": {
+          "array": {
+            "len": {},
+            "max": {},
+            "min": {},
+            "range": {}
+          },
+          "date": {
+            "format": {},
+            "invalid": {},
+            "parse": {}
+          },
+          "default": {},
+          "enum": {},
+          "number": {
+            "len": {},
+            "max": {},
+            "min": {},
+            "range": {}
+          },
+          "pattern": {
+            "mismatch": {}
+          },
+          "required": {},
+          "string": {
+            "len": {},
+            "max": {},
+            "min": {},
+            "range": {}
+          },
+          "types": {
+            "array": {},
+            "boolean": {},
+            "date": {},
+            "email": {},
+            "float": {},
+            "hex": {},
+            "integer": {},
+            "method": {},
+            "number": {},
+            "object": {},
+            "regexp": {},
+            "string": {},
+            "url": {}
+          },
+          "whitespace": {}
+        }
+      },
+      "Icon": {
+        "icon": {}
       },
       "Modal": {
         "cancelText": {},
@@ -7639,11 +7747,24 @@ var antd = {
         "okText": {}
       },
       "Table": {
+        "cancelSort": {},
+        "collapse": {},
+        "expand": {},
         "filterConfirm": {},
         "filterReset": {},
         "filterTitle": {},
         "selectAll": {},
-        "selectInvert": {}
+        "selectInvert": {},
+        "selectionAll": {},
+        "sortTitle": {},
+        "triggerAsc": {},
+        "triggerDesc": {}
+      },
+      "Text": {
+        "copied": {},
+        "copy": {},
+        "edit": {},
+        "expand": {}
       },
       "TimePicker": {
         "placeholder": {}
@@ -7660,528 +7781,306 @@ var antd = {
         "uploadError": {},
         "uploading": {}
       },
+      "global": {
+        "placeholder": {}
+      },
       "locale": {}
     }
   },
   "message": {
-    "config": function () {},
-    "destroy": function () {},
-    "error": function () {},
-    "info": function () {},
-    "loading": function () {},
-    "open": function () {},
-    "success": function () {},
-    "warn": function () {},
-    "warning": function () {}
+    "config": function () { },
+    "destroy": function () { },
+    "error": function () { },
+    "info": function () { },
+    "loading": function () { },
+    "open": function () { },
+    "success": function () { },
+    "warn": function () { },
+    "warning": function () { }
   },
   "notification": {
-    "close": function () {},
-    "config": function () {},
-    "destroy": function () {},
-    "error": function () {},
-    "info": function () {},
-    "open": function () {},
-    "success": function () {},
-    "warn": function () {},
-    "warning": function () {}
+    "close": function () { },
+    "config": function () { },
+    "destroy": function () { },
+    "error": function () { },
+    "info": function () { },
+    "open": function () { },
+    "success": function () { },
+    "useNotification": function () { },
+    "warn": function () { },
+    "warning": function () { }
   },
   "version": {}
 };
 antd.Affix.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
+  "forceUpdate": function () { },
+  "isReactComponent": function () { },
+  "setState": function () { }
 };
-antd.Alert.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
+antd.Alert.ErrorBoundary.prototype = {
+  "forceUpdate": function () { },
+  "isReactComponent": function () { },
+  "setState": function () { }
 };
 antd.Anchor.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
+  "forceUpdate": function () { },
+  "isReactComponent": function () { },
+  "setState": function () { }
 };
 antd.Anchor.Link.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
-};
-antd.AutoComplete.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
-};
-antd.AutoComplete.OptGroup.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
-};
-antd.AutoComplete.Option.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
+  "forceUpdate": function () { },
+  "isReactComponent": function () { },
+  "setState": function () { }
 };
 antd.Avatar.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
-};
-antd.BackTop.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
-};
-antd.Badge.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
+  "forceUpdate": function () { },
+  "isReactComponent": function () { },
+  "setState": function () { }
 };
 antd.Breadcrumb.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
+  "forceUpdate": function () { },
+  "isReactComponent": function () { },
+  "setState": function () { }
 };
 antd.Breadcrumb.Item.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
+  "forceUpdate": function () { },
+  "isReactComponent": function () { },
+  "setState": function () { }
 };
 antd.Breadcrumb.Separator.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
-};
-antd.Button.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
-};
-antd.Calendar.prototype = {
-  "componentWillMount": function () {},
-  "componentWillReceiveProps": function () {},
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
-};
-antd.Card.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
+  "forceUpdate": function () { },
+  "isReactComponent": function () { },
+  "setState": function () { }
 };
 antd.Carousel.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
+  "forceUpdate": function () { },
+  "isReactComponent": function () { },
+  "setState": function () { }
 };
 antd.Cascader.prototype = {
-  "componentWillMount": function () {},
-  "componentWillReceiveProps": function () {},
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
+  "forceUpdate": function () { },
+  "isReactComponent": function () { },
+  "setState": function () { }
 };
 antd.Checkbox.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
+  "forceUpdate": function () { },
+  "isPureReactComponent": function () { },
+  "isReactComponent": function () { },
+  "setState": function () { }
 };
 antd.Checkbox.Group.prototype = {
-  "componentWillMount": function () {},
-  "componentWillReceiveProps": function () {},
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
+  "forceUpdate": function () { },
+  "isPureReactComponent": function () { },
+  "isReactComponent": function () { },
+  "setState": function () { }
 };
 antd.Col.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
+  "forceUpdate": function () { },
+  "isReactComponent": function () { },
+  "setState": function () { }
 };
 antd.Collapse.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
+  "forceUpdate": function () { },
+  "isReactComponent": function () { },
+  "setState": function () { }
 };
 antd.Collapse.Panel.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
-};
-antd.Comment.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
+  "forceUpdate": function () { },
+  "isReactComponent": function () { },
+  "setState": function () { }
 };
 antd.ConfigProvider.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
+  "forceUpdate": function () { },
+  "isReactComponent": function () { },
+  "setState": function () { }
 };
 antd.DatePicker.prototype = {
-  "componentWillMount": function () {},
-  "componentWillReceiveProps": function () {},
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
+  "forceUpdate": function () { },
+  "isReactComponent": function () { },
+  "setState": function () { }
 };
 antd.DatePicker.MonthPicker.prototype = {
-  "componentWillMount": function () {},
-  "componentWillReceiveProps": function () {},
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
+  "forceUpdate": function () { },
+  "isReactComponent": function () { },
+  "setState": function () { }
 };
 antd.DatePicker.RangePicker.prototype = {
-  "componentWillMount": function () {},
-  "componentWillReceiveProps": function () {},
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
+  "forceUpdate": function () { },
+  "isReactComponent": function () { },
+  "setState": function () { }
+};
+antd.DatePicker.TimePicker.prototype = {
+  "forceUpdate": function () { },
+  "isReactComponent": function () { },
+  "setState": function () { }
 };
 antd.DatePicker.WeekPicker.prototype = {
-  "componentWillMount": function () {},
-  "componentWillReceiveProps": function () {},
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
+  "forceUpdate": function () { },
+  "isReactComponent": function () { },
+  "setState": function () { }
 };
-antd.Descriptions.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
-};
-antd.Dropdown.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
-};
-antd.Dropdown.Button.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
-};
-antd.Form.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
-};
-antd.Form.Item.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
+antd.DatePicker.YearPicker.prototype = {
+  "forceUpdate": function () { },
+  "isReactComponent": function () { },
+  "setState": function () { }
 };
 antd.Input.prototype = {
-  "componentWillMount": function () {},
-  "componentWillReceiveProps": function () {},
-  "componentWillUpdate": function () {},
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
+  "forceUpdate": function () { },
+  "isReactComponent": function () { },
+  "setState": function () { }
 };
 antd.Input.Password.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
+  "forceUpdate": function () { },
+  "isReactComponent": function () { },
+  "setState": function () { }
 };
 antd.Input.Search.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
+  "forceUpdate": function () { },
+  "isReactComponent": function () { },
+  "setState": function () { }
 };
 antd.Input.TextArea.prototype = {
-  "componentWillMount": function () {},
-  "componentWillReceiveProps": function () {},
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
-};
-antd.InputNumber.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
+  "forceUpdate": function () { },
+  "isReactComponent": function () { },
+  "setState": function () { }
 };
 antd.Layout.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
+  "forceUpdate": function () { },
+  "isReactComponent": function () { },
+  "setState": function () { }
 };
 antd.Layout.Content.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
+  "forceUpdate": function () { },
+  "isReactComponent": function () { },
+  "setState": function () { }
 };
 antd.Layout.Footer.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
+  "forceUpdate": function () { },
+  "isReactComponent": function () { },
+  "setState": function () { }
 };
 antd.Layout.Header.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
+  "forceUpdate": function () { },
+  "isReactComponent": function () { },
+  "setState": function () { }
 };
 antd.Layout.Sider.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
-};
-antd.List.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
-};
-antd.List.Item.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
-};
-antd.LocaleProvider.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
-};
-antd.Mention.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
-};
-antd.Mention.Nav.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "render": function () {},
-  "setState": function () {}
+  "forceUpdate": function () { },
+  "isReactComponent": function () { },
+  "setState": function () { }
 };
 antd.Mentions.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
+  "forceUpdate": function () { },
+  "isReactComponent": function () { },
+  "setState": function () { }
 };
 antd.Menu.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
+  "forceUpdate": function () { },
+  "isReactComponent": function () { },
+  "setState": function () { }
 };
 antd.Menu.Item.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
+  "forceUpdate": function () { },
+  "isReactComponent": function () { },
+  "setState": function () { }
 };
 antd.Menu.ItemGroup.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
+  "forceUpdate": function () { },
+  "isReactComponent": function () { },
+  "setState": function () { }
 };
 antd.Menu.SubMenu.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
-};
-antd.Modal.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
-};
-antd.Pagination.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
-};
-antd.Popconfirm.prototype = {
-  "componentWillMount": function () {},
-  "componentWillReceiveProps": function () {},
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
-};
-antd.Popover.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
+  "forceUpdate": function () { },
+  "isReactComponent": function () { },
+  "setState": function () { }
 };
 antd.Progress.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
+  "forceUpdate": function () { },
+  "isReactComponent": function () { },
+  "setState": function () { }
 };
 antd.Radio.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
-};
-antd.Radio.Button.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
+  "forceUpdate": function () { },
+  "isPureReactComponent": function () { },
+  "isReactComponent": function () { },
+  "setState": function () { }
 };
 antd.Radio.Group.prototype = {
-  "componentWillMount": function () {},
-  "componentWillReceiveProps": function () {},
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
-};
-antd.Rate.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
+  "forceUpdate": function () { },
+  "isPureReactComponent": function () { },
+  "isReactComponent": function () { },
+  "setState": function () { }
 };
 antd.Row.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
+  "forceUpdate": function () { },
+  "isReactComponent": function () { },
+  "setState": function () { }
 };
 antd.Select.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
-};
-antd.Select.OptGroup.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
-};
-antd.Select.Option.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
-};
-antd.Skeleton.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
-};
-antd.Slider.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
+  "forceUpdate": function () { },
+  "isReactComponent": function () { },
+  "setState": function () { }
 };
 antd.Spin.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
+  "forceUpdate": function () { },
+  "isReactComponent": function () { },
+  "setState": function () { }
 };
 antd.Statistic.Countdown.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
+  "forceUpdate": function () { },
+  "isReactComponent": function () { },
+  "setState": function () { }
 };
 antd.Steps.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
+  "forceUpdate": function () { },
+  "isReactComponent": function () { },
+  "setState": function () { }
 };
 antd.Steps.Step.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
-};
-antd.Switch.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
-};
-antd.Table.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
-};
-antd.Table.Column.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
-};
-antd.Table.ColumnGroup.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
+  "forceUpdate": function () { },
+  "isReactComponent": function () { },
+  "setState": function () { }
 };
 antd.Tabs.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
+  "forceUpdate": function () { },
+  "isReactComponent": function () { },
+  "setState": function () { }
 };
 antd.Tabs.TabPane.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
-};
-antd.Tag.prototype = {
-  "componentWillMount": function () {},
-  "componentWillReceiveProps": function () {},
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
-};
-antd.Tag.CheckableTag.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
-};
-antd.TimePicker.prototype = {
-  "componentWillMount": function () {},
-  "componentWillReceiveProps": function () {},
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
-};
-antd.Timeline.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
-};
-antd.Tooltip.prototype = {
-  "componentWillMount": function () {},
-  "componentWillReceiveProps": function () {},
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
+  "forceUpdate": function () { },
+  "isReactComponent": function () { },
+  "setState": function () { }
 };
 antd.Transfer.prototype = {
-  "componentWillMount": function () {},
-  "componentWillReceiveProps": function () {},
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
+  "forceUpdate": function () { },
+  "isReactComponent": function () { },
+  "setState": function () { }
 };
 antd.Transfer.List.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
+  "forceUpdate": function () { },
+  "isPureReactComponent": function () { },
+  "isReactComponent": function () { },
+  "setState": function () { }
 };
 antd.Transfer.Search.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
-};
-antd.Tree.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
-};
-antd.Tree.DirectoryTree.prototype = {
-  "componentWillMount": function () {},
-  "componentWillReceiveProps": function () {},
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
+  "forceUpdate": function () { },
+  "isReactComponent": function () { },
+  "setState": function () { }
 };
 antd.TreeSelect.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
+  "forceUpdate": function () { },
+  "isReactComponent": function () { },
+  "setState": function () { }
 };
 antd.Upload.prototype = {
-  "componentWillMount": function () {},
-  "componentWillReceiveProps": function () {},
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
+  "forceUpdate": function () { },
+  "isReactComponent": function () { },
+  "setState": function () { }
 };
 antd.Upload.Dragger.prototype = {
-  "forceUpdate": function () {},
-  "isReactComponent": function () {},
-  "setState": function () {}
+  "forceUpdate": function () { },
+  "isReactComponent": function () { },
+  "setState": function () { }
 };
 /**********************************************************************
  * End Generated Extern for antd
